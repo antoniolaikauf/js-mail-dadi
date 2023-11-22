@@ -10,3 +10,15 @@ console.log(mossaComputer);
 let mossaPersona = Math.floor(Math.random()*6 +1)
 console.log(mossaPersona);
 
+// creazione del codie per chi vince , perde e pareggia 
+let risultato;
+if (mossaComputer > mossaPersona) {
+    risultato="ha vinto il computer";
+} else if (mossaPersona > mossaComputer) {
+    risultato="ha vinto l'utente";
+} else{
+    risultato="avete pareggiato";
+}
+// messo output dentro html
+document.getElementById("output").innerHTML=risultato;
+console.log(risultato);
