@@ -11,7 +11,9 @@ const verificaUser= document.getElementById("verifica");
 
 // inizio evento 
 verificaUser.addEventListener("click", function () {
+    // variabile con dentro valore dell'input dati utente
     let valoreEmail = emailUser.value;
+    // variabile di default 
     let risultato="non entri";
     // creazione lista 
     const arrayEmail=["antonio.pesenti@gmail.com", "federico.astori@gmail.com","luca.astori@gmail.com"];
