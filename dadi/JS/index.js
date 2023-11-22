@@ -20,5 +20,4 @@ if (mossaComputer > mossaPersona) {
     risultato="avete pareggiato";
 }
 // messo output dentro html
-document.getElementById("output").innerHTML=risultato;
 console.log(risultato);
