@@ -9,20 +9,21 @@ console.log(emailUser);
 // creare variabile con pulsante 
 const verificaUser= document.getElementById("verifica");
 
-verificaUser.addEventListener("click", function(){
-    const arrayEmail=["antonio.laikauf00@gmail.com","marco.pesenti@gmail.com","luca.astori@gmail.com"];
+
+// evento per vedere se presente in lista
+verificaUser.addEventListener("click", function () {
     let valoreEmail = emailUser.value;
+    let risultato;
+    const arrayEmail=["antonio.pesenti@gmail.com", "federico.astori@gmail.com","luca.astori@gmail.com"];
     for (let i = 0; i < arrayEmail.length; i++) {
-        // console.log(arrayEmail[i]);
-        // verificare se dentro array è inserito la sua email
-        if (valoreEmail === "antonio.laikauf00@gmail.com" || valoreEmail ==="marco.pesenti@gmail.com" || valoreEmail === "luca.astori@gmail.com"  ) {
-            // far vedere output ad utente
-            document.getElementById("output").innerHTML="puoi entrare";
+        // controllo se email presente in lista 
+        if (valoreEmail ===  arrayEmail[0] || valoreEmail ===  arrayEmail[1] || valoreEmail === arrayEmail[2] ) {
+            risultato="puoi entrare"
         } else {
-            // far vedere output ad utente
-            document.getElementById("output").innerHTML="non puoi entrare";
+            risultato="non puoi entrare"
         }
     }
-
+    document.getElementById("output").innerHTML=risultato;
 })
+ 
 
