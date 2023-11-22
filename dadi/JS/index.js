@@ -4,10 +4,10 @@
 // Se dobbiamo confrontare qualcosa che “cosa” ci serve?
 
 // generare mossa computer e persona
-let mossaComputer = Math.floor(Math.random()*6 +1)
+let mossaComputer = Math.floor(Math.random() * 6) + 1;
 console.log(mossaComputer);
 
-let mossaPersona = Math.floor(Math.random()*6 +1)
+let mossaPersona = Math.floor(Math.random() * 6) + 1;
 console.log(mossaPersona);
 
 // creazione del codie per chi vince , perde e pareggia 
