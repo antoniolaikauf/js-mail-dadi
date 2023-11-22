@@ -4,3 +4,14 @@
 // chiedere ad utente email
 // verificare se dentro array è inserito la sua email
 // far vedere output ad utente
+
+const emailUser = document.getElementById("dati-utente");
+console.log(emailUser);
+
+const verificaUser= document.getElementById("verifica");
+
+const arrayEmail=["antonio.laikauf00@gmail.com","marco.pesenti@gmail.com","luca.astori@gmail.com"];
+
+
+
+
