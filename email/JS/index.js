@@ -14,4 +14,10 @@ const arrayEmail=["antonio.laikauf00@gmail.com","marco.pesenti@gmail.com","luca.
 
 
 
-
+verificaUser.addEventListener("click", function(){
+    for (let i = 0; i < arrayEmail.length; i++) {
+        // console.log(arrayEmail[i]);
+        let valoreEmail = emailUser.value;
+        console.log(valoreEmail);
+    }
+})
